@@ -1,0 +1,534 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='EX-16' inline='true' name='federated.1j5r5x710l496q1echque105a9zf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='EX-16' name='textscan.0pa6xgj0li24p010usya801d6ik8'>
+            <connection class='textscan' directory='C:/Users/New/Documents/DH&amp;V LAB PROGRAMS/CSV files' filename='EX-16.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0pa6xgj0li24p010usya801d6ik8' name='EX-16.csv' table='[EX-16#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Patient_ID' ordinal='0' />
+            <column datatype='integer' name='Age' ordinal='1' />
+            <column datatype='integer' name='BMI' ordinal='2' />
+            <column datatype='integer' name='BP' ordinal='3' />
+            <column datatype='integer' name='Cholesterol' ordinal='4' />
+            <column datatype='string' name='F6' ordinal='5' />
+            <column datatype='string' name='F7' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[EX-16.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient_ID]</local-name>
+            <parent-name>[EX-16.csv]</parent-name>
+            <remote-alias>Patient_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[EX-16.csv_3F8545E9CCED40BA8A94EC6929339CF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[EX-16.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[EX-16.csv_3F8545E9CCED40BA8A94EC6929339CF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BMI</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BMI]</local-name>
+            <parent-name>[EX-16.csv]</parent-name>
+            <remote-alias>BMI</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[EX-16.csv_3F8545E9CCED40BA8A94EC6929339CF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BP]</local-name>
+            <parent-name>[EX-16.csv]</parent-name>
+            <remote-alias>BP</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[EX-16.csv_3F8545E9CCED40BA8A94EC6929339CF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cholesterol</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cholesterol]</local-name>
+            <parent-name>[EX-16.csv]</parent-name>
+            <remote-alias>Cholesterol</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[EX-16.csv_3F8545E9CCED40BA8A94EC6929339CF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[EX-16.csv]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[EX-16.csv_3F8545E9CCED40BA8A94EC6929339CF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F7</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F7]</local-name>
+            <parent-name>[EX-16.csv]</parent-name>
+            <remote-alias>F7</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[EX-16.csv_3F8545E9CCED40BA8A94EC6929339CF5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Patient ID' datatype='string' name='[Patient_ID]' role='dimension' type='nominal' />
+      <column caption='EX-16.csv' datatype='table' name='[__tableau_internal_object_id__].[EX-16.csv_3F8545E9CCED40BA8A94EC6929339CF5]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='EX-16.csv' id='EX-16.csv_3F8545E9CCED40BA8A94EC6929339CF5'>
+            <properties context=''>
+              <relation connection='textscan.0pa6xgj0li24p010usya801d6ik8' name='EX-16.csv' table='[EX-16#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Patient_ID' ordinal='0' />
+                  <column datatype='integer' name='Age' ordinal='1' />
+                  <column datatype='integer' name='BMI' ordinal='2' />
+                  <column datatype='integer' name='BP' ordinal='3' />
+                  <column datatype='integer' name='Cholesterol' ordinal='4' />
+                  <column datatype='string' name='F6' ordinal='5' />
+                  <column datatype='string' name='F7' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1j5r5x710l496q1echque105a9zf'>
+      <datasources>
+        <datasource caption='EX-16' name='federated.1j5r5x710l496q1echque105a9zf' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1j5r5x710l496q1echque105a9zf'>
+        <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+        <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.1j5r5x710l496q1echque105a9zf].[none:Age:qk]' included-values='in-range'>
+        <min>25</min>
+        <max>60</max>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EX-16' name='federated.1j5r5x710l496q1echque105a9zf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1j5r5x710l496q1echque105a9zf'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[BMI]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Cholesterol]' role='measure' type='quantitative' />
+            <column caption='Patient ID' datatype='string' name='[Patient_ID]' role='dimension' type='nominal' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Patient_ID]' derivation='None' name='[none:Patient_ID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Age]' derivation='Sum' name='[sum:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BMI]' derivation='Sum' name='[sum:BMI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cholesterol]' derivation='Sum' name='[sum:Cholesterol:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1j5r5x710l496q1echque105a9zf].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1j5r5x710l496q1echque105a9zf].[sum:Age:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1j5r5x710l496q1echque105a9zf].[sum:Cholesterol:qk]' />
+              <tooltip column='[federated.1j5r5x710l496q1echque105a9zf].[sum:Age:qk]' />
+              <text column='[federated.1j5r5x710l496q1echque105a9zf].[sum:BMI:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1j5r5x710l496q1echque105a9zf].[none:Patient_ID:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{C7A89328-AA1A-4E63-A502-7AC6B47AA936}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='EX-16' name='federated.1j5r5x710l496q1echque105a9zf' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1j5r5x710l496q1echque105a9zf'>
+        <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+        <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='98000' id='3' name='Sheet 1' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='9125' id='8' name='Sheet 1' param='[federated.1j5r5x710l496q1echque105a9zf].[none:Age:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9125' id='9' name='Sheet 1' pane-specification-id='0' param='[federated.1j5r5x710l496q1echque105a9zf].[sum:Cholesterol:qk]' type-v2='color' w='16000' x='83200' y='10125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='11' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='10' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='9125' id='8' name='Sheet 1' param='[federated.1j5r5x710l496q1echque105a9zf].[none:Age:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Sheet 1' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='9' name='Sheet 1' pane-specification-id='0' param='[federated.1j5r5x710l496q1echque105a9zf].[sum:Cholesterol:qk]' type-v2='color' w='16000' x='83200' y='10125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{ACB863DE-5C0B-490C-A34A-90C407992FD0}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1j5r5x710l496q1echque105a9zf].[none:Age:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1j5r5x710l496q1echque105a9zf].[sum:Cholesterol:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1j5r5x710l496q1echque105a9zf].[none:Age:qk]</field>
+            <field>[federated.1j5r5x710l496q1echque105a9zf].[none:Patient_ID:nk]</field>
+            <field>[federated.1j5r5x710l496q1echque105a9zf].[sum:Cholesterol:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E53AEEC6-9694-4F09-BB1F-ED9A8EBD7E66}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1' />
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{1D63BBAF-AEF1-4DCC-80B0-BEB47160A71D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='129' name='Sheet 1' width='144'>
+      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
+      VjsAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

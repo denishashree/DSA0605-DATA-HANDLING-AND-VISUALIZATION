@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='EX-18' inline='true' name='federated.0ylabkn1serdtc1bvnilj0ioqo04' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='EX-18' name='textscan.0nsmcsb04dx1q21e6j04p0gv75l0'>
+            <connection class='textscan' directory='C:/Users/New/Documents/DH&amp;V LAB PROGRAMS/CSV files' filename='EX-18.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0nsmcsb04dx1q21e6j04p0gv75l0' name='EX-18.csv' table='[EX-18#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Student_ID' ordinal='0' />
+            <column datatype='integer' name='Age' ordinal='1' />
+            <column datatype='integer' name='Study_Hours' ordinal='2' />
+            <column datatype='integer' name='Attendance (%)' ordinal='3' />
+            <column datatype='integer' name='Test_Score' ordinal='4' />
+            <column datatype='integer' name='Participation_Score' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[EX-18.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Student_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Student_ID]</local-name>
+            <parent-name>[EX-18.csv]</parent-name>
+            <remote-alias>Student_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[EX-18.csv_D7F7238F653046BE9592F41BE72E70EA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[EX-18.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[EX-18.csv_D7F7238F653046BE9592F41BE72E70EA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Study_Hours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Study_Hours]</local-name>
+            <parent-name>[EX-18.csv]</parent-name>
+            <remote-alias>Study_Hours</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[EX-18.csv_D7F7238F653046BE9592F41BE72E70EA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attendance (%)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Attendance (%)]</local-name>
+            <parent-name>[EX-18.csv]</parent-name>
+            <remote-alias>Attendance (%)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[EX-18.csv_D7F7238F653046BE9592F41BE72E70EA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Test_Score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Test_Score]</local-name>
+            <parent-name>[EX-18.csv]</parent-name>
+            <remote-alias>Test_Score</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[EX-18.csv_D7F7238F653046BE9592F41BE72E70EA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Participation_Score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Participation_Score]</local-name>
+            <parent-name>[EX-18.csv]</parent-name>
+            <remote-alias>Participation_Score</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[EX-18.csv_D7F7238F653046BE9592F41BE72E70EA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Participation Score' datatype='integer' name='[Participation_Score]' role='measure' type='quantitative' />
+      <column caption='Student ID' datatype='string' name='[Student_ID]' role='dimension' type='nominal' />
+      <column caption='Study Hours' datatype='integer' name='[Study_Hours]' role='measure' type='quantitative' />
+      <column caption='Test Score' datatype='integer' name='[Test_Score]' role='measure' type='quantitative' />
+      <column caption='EX-18.csv' datatype='table' name='[__tableau_internal_object_id__].[EX-18.csv_D7F7238F653046BE9592F41BE72E70EA]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='EX-18.csv' id='EX-18.csv_D7F7238F653046BE9592F41BE72E70EA'>
+            <properties context=''>
+              <relation connection='textscan.0nsmcsb04dx1q21e6j04p0gv75l0' name='EX-18.csv' table='[EX-18#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Student_ID' ordinal='0' />
+                  <column datatype='integer' name='Age' ordinal='1' />
+                  <column datatype='integer' name='Study_Hours' ordinal='2' />
+                  <column datatype='integer' name='Attendance (%)' ordinal='3' />
+                  <column datatype='integer' name='Test_Score' ordinal='4' />
+                  <column datatype='integer' name='Participation_Score' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EX-18' name='federated.0ylabkn1serdtc1bvnilj0ioqo04' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ylabkn1serdtc1bvnilj0ioqo04'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column caption='Participation Score' datatype='integer' name='[Participation_Score]' role='measure' type='quantitative' />
+            <column caption='Student ID' datatype='string' name='[Student_ID]' role='dimension' type='nominal' />
+            <column caption='Study Hours' datatype='integer' name='[Study_Hours]' role='measure' type='quantitative' />
+            <column caption='Test Score' datatype='integer' name='[Test_Score]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Student_ID]' derivation='None' name='[none:Student_ID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Age]' derivation='Sum' name='[sum:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Participation_Score]' derivation='Sum' name='[sum:Participation_Score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Study_Hours]' derivation='Sum' name='[sum:Study_Hours:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Test_Score]' derivation='Sum' name='[sum:Test_Score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0ylabkn1serdtc1bvnilj0ioqo04].[none:Age:qk]' included-values='in-range'>
+            <min>19</min>
+            <max>23</max>
+          </filter>
+          <slices>
+            <column>[federated.0ylabkn1serdtc1bvnilj0ioqo04].[none:Age:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0ylabkn1serdtc1bvnilj0ioqo04].[sum:Participation_Score:qk]' />
+              <tooltip column='[federated.0ylabkn1serdtc1bvnilj0ioqo04].[sum:Age:qk]' />
+              <text column='[federated.0ylabkn1serdtc1bvnilj0ioqo04].[none:Student_ID:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ylabkn1serdtc1bvnilj0ioqo04].[sum:Test_Score:qk]</rows>
+        <cols>[federated.0ylabkn1serdtc1bvnilj0ioqo04].[sum:Study_Hours:qk]</cols>
+      </table>
+      <simple-id uuid='{8F00C08F-4C0E-4778-87DA-3283E37DE358}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0ylabkn1serdtc1bvnilj0ioqo04].[none:Age:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.0ylabkn1serdtc1bvnilj0ioqo04].[sum:Participation_Score:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ylabkn1serdtc1bvnilj0ioqo04].[none:Age:qk]</field>
+            <field>[federated.0ylabkn1serdtc1bvnilj0ioqo04].[none:Student_ID:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F615749C-3492-4F19-8C70-E353B5A39267}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
