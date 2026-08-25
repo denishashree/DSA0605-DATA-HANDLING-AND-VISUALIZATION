@@ -1,0 +1,989 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <Extensions />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='EX-21' inline='true' name='federated.07q6wzj01v06m51eqgw270xxcvvp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='EX-21' name='textscan.1epw5hw1xtb1me1gx1f670u15tjv'>
+            <connection class='textscan' directory='C:/Users/New/Documents/DH&amp;V LAB PROGRAMS/CSV files' filename='EX-21.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1epw5hw1xtb1me1gx1f670u15tjv' name='EX-21.csv' table='[EX-21#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Movie ID' ordinal='0' />
+            <column datatype='string' name='Genre' ordinal='1' />
+            <column datatype='real' name='Rating' ordinal='2' />
+            <column datatype='integer' name='Duration (Min)' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[EX-21.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Movie ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Movie ID]</local-name>
+            <parent-name>[EX-21.csv]</parent-name>
+            <remote-alias>Movie ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[EX-21.csv_FE5D3F7CE8524582ABE64917E01D13F2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Genre]</local-name>
+            <parent-name>[EX-21.csv]</parent-name>
+            <remote-alias>Genre</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[EX-21.csv_FE5D3F7CE8524582ABE64917E01D13F2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[EX-21.csv]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[EX-21.csv_FE5D3F7CE8524582ABE64917E01D13F2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration (Min)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration (Min)]</local-name>
+            <parent-name>[EX-21.csv]</parent-name>
+            <remote-alias>Duration (Min)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[EX-21.csv_FE5D3F7CE8524582ABE64917E01D13F2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Movie ID]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Rating (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[Rating]' peg='0' size='0.26' />
+      </column>
+      <column datatype='real' name='[Rating]' role='measure' type='quantitative' />
+      <column caption='EX-21.csv' datatype='table' name='[__tableau_internal_object_id__].[EX-21.csv_FE5D3F7CE8524582ABE64917E01D13F2]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='EX-21.csv' id='EX-21.csv_FE5D3F7CE8524582ABE64917E01D13F2'>
+            <properties context=''>
+              <relation connection='textscan.1epw5hw1xtb1me1gx1f670u15tjv' name='EX-21.csv' table='[EX-21#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Movie ID' ordinal='0' />
+                  <column datatype='string' name='Genre' ordinal='1' />
+                  <column datatype='real' name='Rating' ordinal='2' />
+                  <column datatype='integer' name='Duration (Min)' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Average Ratings by Genre'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EX-21' name='federated.07q6wzj01v06m51eqgw270xxcvvp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07q6wzj01v06m51eqgw270xxcvvp'>
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Rating]' role='measure' type='quantitative' />
+            <column-instance column='[Rating]' derivation='Avg' name='[avg:Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.07q6wzj01v06m51eqgw270xxcvvp].[avg:Rating:qk]</rows>
+        <cols>[federated.07q6wzj01v06m51eqgw270xxcvvp].[none:Genre:nk]</cols>
+      </table>
+      <simple-id uuid='{62528882-0931-4645-99A8-165ADE5B9660}' />
+    </worksheet>
+    <worksheet name='Duration vs Rating'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EX-21' name='federated.07q6wzj01v06m51eqgw270xxcvvp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07q6wzj01v06m51eqgw270xxcvvp'>
+            <column datatype='integer' name='[Duration (Min)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Movie ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Movie ID]' derivation='None' name='[none:Movie ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Duration (Min)]' derivation='Sum' name='[sum:Duration (Min):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.07q6wzj01v06m51eqgw270xxcvvp].[none:Movie ID:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07q6wzj01v06m51eqgw270xxcvvp].[sum:Duration (Min):qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{58ABDC46-ADA0-41F3-8796-4057C1E9549C}' />
+    </worksheet>
+    <worksheet name='Genre Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EX-21' name='federated.07q6wzj01v06m51eqgw270xxcvvp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07q6wzj01v06m51eqgw270xxcvvp'>
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Movie ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Movie ID]' derivation='Count' name='[cnt:Movie ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.07q6wzj01v06m51eqgw270xxcvvp].[none:Genre:nk]' />
+              <wedge-size column='[federated.07q6wzj01v06m51eqgw270xxcvvp].[cnt:Movie ID:qk]' />
+              <text column='[federated.07q6wzj01v06m51eqgw270xxcvvp].[none:Genre:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2462B6A8-098B-4308-AE2F-6CF95F2B13BF}' />
+    </worksheet>
+    <worksheet name='Movie Ratings Histogram'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EX-21' name='federated.07q6wzj01v06m51eqgw270xxcvvp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07q6wzj01v06m51eqgw270xxcvvp'>
+            <column datatype='integer' name='[Rating (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-1' formula='[Rating]' peg='0' size='0.26' />
+            </column>
+            <column datatype='real' name='[Rating]' role='measure' type='quantitative' />
+            <column-instance column='[Rating]' derivation='Count' name='[cnt:Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rating (bin)]' derivation='None' name='[none:Rating (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.07q6wzj01v06m51eqgw270xxcvvp].[cnt:Rating:qk]</rows>
+        <cols>[federated.07q6wzj01v06m51eqgw270xxcvvp].[none:Rating (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.07q6wzj01v06m51eqgw270xxcvvp].[Rating (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{22D306B4-1320-4AA5-B5C5-E0427672FDFC}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Movie Ratings Histogram'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B940B4F0-69F3-4972-A1A1-E637B4AD80C8}' />
+    </window>
+    <window class='worksheet' name='Genre Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07q6wzj01v06m51eqgw270xxcvvp].[none:Genre:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07q6wzj01v06m51eqgw270xxcvvp].[none:Genre:nk]</field>
+            <field>[federated.07q6wzj01v06m51eqgw270xxcvvp].[none:Movie ID:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3EC35555-CEC7-4B8C-9D61-CD73907CA59E}' />
+    </window>
+    <window class='worksheet' name='Average Ratings by Genre'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07q6wzj01v06m51eqgw270xxcvvp].[none:Genre:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2F3A6D7D-A202-4864-87C8-9AB23ECA722A}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Duration vs Rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07q6wzj01v06m51eqgw270xxcvvp].[none:Movie ID:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.07q6wzj01v06m51eqgw270xxcvvp].[none:Movie ID:ok]</field>
+            <field>[federated.07q6wzj01v06m51eqgw270xxcvvp].[none:Rating (bin):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EA2359D1-0F99-4C8D-BC69-6503F47DE13F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Average Ratings by Genre' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAANqElEQVR4nO3da2xUZ2KH8edc5u7x/Y4xhIshEEhJshAUEpJA0t1NNknbKG2lqqt2lbbq
+      Vt1Prfqhqrbtx62qVqqUlapqV02rbjdSVk122TTZZYGEhFsIBHLBXIPBGNvYeDz23M6lHwAH
+      Q0gJAebY7/8nITHDy8w74/PMec+BmbHCMAwRMZBlWZZd7UmIVJMCEKMpADGaAhCjKQAxmgIQ
+      oykAMZoCEKMpADGaW+0JyI0p5wbY/atX2LR5L2dyZRrm38vXnnmadXd1kXSqPbuZQwHMROUh
+      tvz7P/DD91zWrX+U+5syjJ85Tv8nJ8kv/TSA0K/g4RJzrC9xZwFe2ceOx2blckEBzECjH77O
+      f28r8Ox3/45v3NlEzIIw9PH8ANuG0CtwdM/rvPrLvYz6KVas/02+/mAPaSvk+C9f4MQ5m529
+      gyQ7VvIbzz3F/NoC+ze9wvkFG5mb28WmX+X4xl/8Ni2Dh3jtZ5vYfyJH7R2rePLJx+lpTfNl
+      coqa2Rj1LDfJ4b0HyC1Yy8alTcSCMvnxHLlcnmLJB+DcsS3824tbabjnSZ59bCnv/vgFNu05
+      jQ8c2PE6+0qdfGVVGwd//iN+srMPKHL47Z/x6ms/5Qf/+l8cGMjj5c/w2o9+wDvnO3nmuadp
+      P7edH/54M8OTflUf/c2mPcCM41MqlbFq66m1gVN7+N4/v8gHhw6TuPMZ/uYv/4zxN99gtHUN
+      a++dT4PXypp529j93kc8uqqTeR1NPP37TwGDHP7fzQxOFIEa/GKBY739/NG3v8eGuzsYO7aV
+      3cfLPPi799HVXkfiK7/G1p+8y+nzD9GSrq3yc3DzKIAZJ06mJgFHRxgD6lpX8sff+Ss+2vx9
+      XvrgwoiB/qP095b4j+8fIhb6jPbnyN7jEwTXvlXLTbByw3M8encHMQtKxTOMHjnJGy+/yL4a
+      Fy8/zNhEC6Xwc25kBlIAM06cBT2LsV7dwpbe53i6p4bOOWnGmrNTP8zm5jk0dtzFY8+so8EC
+      cMi2dFAfg9PXuFXLtqipryN+cYEfTzST6WxmxYOPc+/8ugtXxmqZ31xzax/ebaZjgBnHom71
+      szy/rpb//O53+McXX2Xb9m28tfs4YTqN68DChzZSN3yAfR8OEoQeg7372bXvEOOV67+X+pal
+      rF4U5529BxkrhVTyA+zcuou+3OSte2hVoD3ADGRZtTz8/F+T6HyZHYffZ+uJkFTDGp5+4GHa
+      ayDV81X+9HmLN7bv4tUjAen6Lu57ZC6ZGDQv23DxVlKsWP9V8gsagCSL1v46TXNTU/cRq+vk
+      id/7E9zXN7P1tVcglqF96RpaM6nPnNNMZektkTNYGOB5Hn4AbiyOM21/HuJ7Hp4f4sbj3PA/
+      BYQ+5bKH5bi4rjOrToFalmUpADHWrH9PcBAEqG/5PLM6AM/zCD7v3J8Yb1YHIPL/UQBiNAUg
+      RlMAYjQFIEZTAGI0BSBGUwBiNAUgRlMAYjQFIEZTAGI0BSBGUwBiNAUgRlMAYjQFIEZTAGI0
+      BSBGUwBiNAUgRlMAYjQjPxrxzLk8vX3nqj0NAFYubKUhO7s+bnAmMTKAg8fP8i8v7672NAD4
+      2z94WAFUkZZAYjQFIEZTAGI0BSBGUwBitMidBaqcO8EHZ0p0L1xC41UnRwKK4yMMDIwy9W0/
+      8Ro621rIJCP3UGQGiNZW4w2xe8teDo71Q/NnBBD6DPZ9zEdHK7R1N+IABDF8fQeA3KDIBBAG
+      ZU7v28tQ2zIWeZ/gf8Y2HfoeufEJarpXsvKu1otf12Nh27Ppi3vkdorGMUAYkO/vZd9IhjXL
+      5+JeY3sOfZ/yRA63JkMYBGA5OI6NZSkAuTGR2AP45TxHek/QMm81jdn4NceFWOCVGT5xkN2n
+      Jhkt2HQvXcmS7mbiNvi+j+/7U+ODICAILnyR3OWuvFxNlUqFUqlU7WkYKxIB5E6+ywm/mw0L
+      WnC59sZpx5Isvm8jHaUAggqNg6d4/913iCcfoae9BsuycBxnanwYhtj21XsI247Gjg/Aduxp
+      c5bbKwIBDPPeW4fI1XSy9bVPCAOfk8eGiHtbqNl4D4tba6fWaZbtkG1sIwtASHtnA4UzbzEw
+      PMqi9hqcKzZs3/ex7as3sCgF4NgOrhuBH4OhIvDMN7Lud76Jd/FMTuh77Jg4Qnrt/SxoihN6
+      JcYnSyQytdjBCIMDNi1z6ojZ4BcL5DyPVCI5q76/Vm6fCARgE0+luLTyD7wKMdchnkwSc2Bi
+      pI89O4+x+IHHaUtUOLn/bba9HVBfn+T84AixjmWsn1OvAOSGRCCA6SzHZfUT38JKXricqutm
+      9YMdxFPg2i2senQjPROTlD0P3DTZbA3pREwByA2JXgCWRTJTO3XZduJkai7tH2wS6SyJdLY6
+      k5NZJzpHgyJVoADEaApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDE
+      aApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMFrlPhpPZ54X/2cPhvnPV
+      ngaZVJy//9Yj065TAHLL9Q+Pc7R/tNrTIJu++stXtAQSoykAMZoCEKMpADGaAhCjKQAxmgIQ
+      oykAMZoCEKMpADGaAhCjKQAxmgIQoykAMZoCEKNF6/0AYcjEkW28tHeMBx97ioWNV/95UBrj
+      4M7NvLn3JLWL7mPjI2tpzzhYVlVmLDNchPYAIaWRD9j0TpFscJTzpc8Y4Rf5cMcbHPWX8M1v
+      /zkbugts+8WbnJ30b/90ZVaITABBcZQD+08yZ/XdtDifPaZSGmdwOGT5PUupidu099xNW7rI
+      0FCO8PZOV2aJaAQQepw93suw3c6d3fXXHOb55yiUO2iuvVCInczQHIszUZokuF1zlVklEscA
+      pdwAh44Nccfqx6mNf06TlgduhqkhlkvSjZG3L2z+nufhed7U8DAMqVQqV91MuVy+mdP/Uoql
+      IhMTE9Wexi0V+BFZooZc9VxHIIACR95+g2PeMjpzpzh+3mNorEC+r4+RulYa0gmmjm9Di9Ar
+      4oWABYQBFc8jDC6McF0X1/30IZXLZeLxOI4zfU0Vj1/95uhqSSaSZDKZak/jlrKda6xpbzeL
+      q57rCCyBfJy6hdw5J85ELkcuN06x7FHI5yl50xc2jlWHSz8jExdW/GF5kuFSkZhzWSQiX0AE
+      9gAZetY8MHUQG3gVcke2kVnSQ1vWxivmGBzMUd/eRSrRSGtLyJFDfXSs7GCy/wQjJZt7WhoU
+      gNyQCARgTdtFWoQ0tc8jmXKwLSgWhjl66DgLG7rIZNMsv281b27Zzk9PJvAKPsvWP0FXnasA
+      5IZEIIDpbMdlxfrfmrqcbljAQ48tuHjJItEwjw1PzaFc8bDdODE3Aqs4mbEiF8D1sByXhDMj
+      py4Ro5dPMZoCEKMpADGaAhCjKQAxmgIQoykAMZoCEKMpADGaAhCjKQAxmgIQoykAMZoCEKMp
+      ADGaAhCjKQAxmgIQoykAMZoCEKMpADGaAhCjKQAxmgIQoykAMZoCEKMpADGaAhCjKQAxmgIQ
+      o+kzxmeQM+fy/NNLO6o9DZZ0N/GHX19V7WncFApgBilVPD4+OVztaZBJxqo9hZtGSyAxmgIQ
+      oykAMZoCEKMpADGaAhCjKQAxmgIQoykAMVok/iU4DHyKk+NMFMr4QUg8lSVbk8K1rStH4pWL
+      TE6WCC5dZcfIZFLEHLUsX1wkAigNHeHt/cfIT0ziBQFOop55PStZtqiNxOXbdehx9sQ+3nv/
+      HOmmDBZApoWVd/bQlI1XafYyk0UiADuWYt7y+5nbVkfcDhjs3cOe4x/R0dVGe/qygYHP2Fie
+      7PwVrFnRfiEAyybmRuJhyAwUiS0n3tjNoou/D8MQN5nECfMQTh8X+j7lyTzxOQ3EYzEsy8a6
+      cpUk8gVEIgAIKOSG6D81zHhhnMH+QVrveoiWzBWjwhCvOMHEyGl6SxVKJGlp76S1sQbXgiAI
+      CMNPqwnDEN/3p10HEPgBUeH7Pp7nXffYKAjD8LrnfGl8VFw574gEEFIujDN0uo/B/CR2pomE
+      HRCGwGWv8JabYG7PKuLjFcrFSQYHjvPxsVPc/8BauhtTwIUIpm41DKd+XS6I0A8kCIPr3rAv
+      f2zVdOmF5Qv8hVs3mS/oynlHJACHurZF3L9xAV65wMCxD3jv433U1q1jbv2nB7e2E6PtjuW0
+      ARASVEbZ+fPt9A2M0tWYwrFtbPvTo+YwDHEcB8dxpt2b606/XE0xN0Yikbi+sbFo/D9827av
+      e84Alh2dM3RXzjsSMysVJqgEIVg2bjxNR3sblldgolAhDDzKpRJ+AEFQYDxXxL/sFcWybWwd
+      CMgNisQe4OyhXRwdc0lna6lxPQYHzuDUdNBSn6I4fpqDB07RvWotDc4wB7YfxqvLUJuJkR86
+      y1kny5qOxmiULDNOJAJo6V5E7pNBSoQEgU1dx2KWzZtPQ8rGt7K0z+kgHYOY286SFUVODY0D
+      kGzsYvXcO+ioS6B9gNyISASQapzL8oauqYPVy09v2sl65t5Rf3FkjKauxTTOuXSAbGn5I19K
+      JAIAsCwL6zo3Zp3/l5tFS2cxmgIQoykAMZoCEKMpADGaAhCjKQAxmgIQoykAMZoCEKMpADGa
+      AhCjKQAxmgIQoykAMZoCEKMpADGaAhCjKQAxmgIQoykAMZoCEKMpADHa/wGJ8USmBpwHHwAA
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Duration vs Rating' width='132'>
+      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
+      MAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='164' name='Genre Distribution' width='164'>
+      iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAYAAAAZtYVBAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAATU0lEQVR4nO2dfVBU192AH3ZZEFYWVtwVdSFSbSSCmEoTQ406Sgz9I/GDWAc0zCSdxNQ0
+      Np3MOPNmYmesJqHWmaqDSiZarDXTmkHfMTamfkQbIRU/YjUKJk1B3AZo2FU+lsAK+8H7h919
+      JXwI7K579u55ZhiGe+6ec5Z55vc759xz743o6enpQSIRBFWwOyCR3I0UUiIUUkiJUEghJUIh
+      hZQIhRRSIhRSSIlQSCElQiGFlAiFFFIiFFJIiVBIISVCIYWUCIUUUiIUUkiJUEghJUIhhZQI
+      hRRSIhRSSIlQSCElQiGFlAiFFFIiFFJIiVBIISVCIYWUCIUUUiIUUkiJUEghJUIhhZQIhRRS
+      IhRSSIlQSCElQiGFlAiFFFIiFFJIiVBIISVCIYWUCEWkPyo5f/48xcXF3r8TEhIoKCjgscce
+      Q6WSzkuGjl+ENJvNGAwGXnvtNZxOJ+fPn+eVV17h+9//Prt37yYuLs4fzUjCAL+FL51Oh8lk
+      YtKkSSxfvpzKykqioqJYv349brfbX81IFE7A8ml0dDSbNm3i4sWL1NbWAlBTU8Pu3btxu928
+      9957pKen8+GHHwLw97//nYULF5KcnExycjIrV66kvr7eW19NTQ3FxcXs2LGDlJQUYmJiWLZs
+      GdevX+cXv/gF48aNIzY2lvXr1+NwOADo6uri3XffJT09neTkZKZMmcLmzZvp6uoK1NeW+EhA
+      B3hJSUkkJSXx1VdfAWC1Wjlz5gxvv/02+/btY8+ePeTk5ABgsVgoKSnBbDZz48YNcnJy+NnP
+      fkZHR4f3s9u3b0er1VJTU0NrayuRkZEsWrSIpUuX0tjYSENDA2fPnuXSpUsAdHR0kJiYSEVF
+      BV9//TWXLl3i8uXL7NixI5BfW+IDfhlDDoRKpWL8+PF0dnZ6jx0/fpzc3FwOHz5MdHS09/jS
+      pUt7fTYvL48jR47Q0tKCVqsFYM6cOTz33HPec9LS0khLS2P+/PkA6PV6TCYTLpcLgDFjxvDM
+      M894z4+Li2P16tXs2bPH799V4h8CKiRAQ0NDr79nz57Nzp07e8kI4HK5OHHiBEeOHKG1tRWH
+      w0FdXZ3P7be2tlJWVsaZM2dwOp3cvHmTMWPG+FyvJDAEVEibzYbdbmfq1KneY3FxcX1ktNls
+      5Ofnk5GRwS9/+Uuio6Npb2/n9ddf96n98+fP89JLL7F27Vo2btwIwMWLFzl8+LBP9UoCR0CF
+      PHz4MD09PUyePHnQ86qrqxk3bhy/+c1vvOuWNpuNqKgon9r/6KOPWLt2LStWrPAe+/rrr4mI
+      iPCpXkngCIiQ3d3d7N27l+LiYvbv3+8dAw6EWq2mpaUFu92OVqvF7XZTUVHBjRs3fOqHRqPp
+      NWTo7OzkyJEj2O12n+qVBA6/CbllyxZ+//vf093dTXd3N3l5eRw/fpykpKR7fnbGjBmMGTOG
+      7Oxs0tPTuXr1Kk8++SRGo9GnPuXn55OXl8eJEyeIiYmhrq6OJUuWMGrUKJ/q9eC0WnFarbis
+      NwG4fe2a97jLehOn1crGrAKMCVqM+js/AOP0WowJWjK+59v3UyIRIr3A/datW9y+fRuDweBz
+      uvbgcrmwWCyo1WrGjh3r86VMp9VK17Uv+Pb0abqufXHP89d8b9Gg5RmpRjK+Z6QgJ8OnfikF
+      oYQUFafVSsfpcm5fuzYkCe/mXkLejVGvZcHMVKb/V9JwRAo5CB2ny2k7cBCn1TriOoYj5N0Y
+      9VoKcjJYMDN1xG2HIlLIfnBardwqeWfY0bA/RiqkB6Ney6vPzAqbiCmFvAun1UrbgYN0nC73
+      W52+CukhI9XIq8tmeSdGSkUKyf+PEdsOHPR73f4S0kN+ToaiJ0BhL6TTasWy4U2fxomD4W8h
+      QdlpPKy3c7cdOEjjmlcDJmOgsLR08MbuU5z6h+/X+kUjLIX0jBUDkaLvJ9sOnGPbgXPB7oZf
+      CTshlSKjh1P/qOONXaeC3Q2/EVZCesaL/pxFi0BVnYUXN/+FquuWQc9rbm5m4cKFPPXUU9hs
+      Nr+1v3r1arZs2eKXusJGyEBPXoKNpaWDbQcHT99XrlwhLi6OiIgIqqurh1V/ZWUlL7zwQr9l
+      K1as8O7895WwENKz0K1UGT1YWjoGTd9Hjx7l6aefJicnh2PHjvmt3Tlz5pCZmemXusJCyI7T
+      5X656hIKVNVZ+PPJqj7Hm5ubqa6u5vHHH2fBggVcvHixT9p2uVzs3bvXe1PckiVL+Oc//0lx
+      cTEbNmzg9OnTFBYWUlhYyK9//WvvNr7i4mLOnz/fq57S0lJSUlIYO3YsP/zhDzl79qy33G63
+      U1xcTHl5Ofn5+cTHx5OYmMjvfve7wN/CEGwCteAtMvtPVvXZoHHlyhV0Oh2TJk3C6XSi0Wio
+      rq4mOzsbALfbzcaNG6mqquKTTz4hMTGRS5cu0dXVxYoVK0hJSWH//v0UFRUBEBUV5d35X1FR
+      QVJSEo8++igA27Zt48yZM1y5coWEhAQuXrzIiy++SElJCbNmzcLhcPD+++9z/PhxNm/ezJ/+
+      9CcsFgsrV65UdoT0pOpw5I3dp3pNco4ePcoTTzyBRqMhJiaGuXPn9krbtbW1XLhwgZKSEgwG
+      AyqViqysLDIzM0lMTMRoNKLVajGZTJhMJoxGY79b+Zqamvjwww8pKioiISEBgKysLNasWUNp
+      aan3vAkTJlBSUkJaWhoqlYqkpCRSU1OVK6RnEhPObDt4DktLR6907eG7afvq1avo9XoMBoNP
+      bZrNZmJjY/tszM7KyqKxsfGes3vFpmxft40pAUtLB38+WcWMsXb+9re/8eCDD/Yq1+l03rTt
+      crl8lhHujB91Ol2fXfk6na7PzX39ocgI6dksIbmzcP7HPx9g69at9PT09PpZt26dN20/8MAD
+      1NXVeR/MMFImTpyI1Wqlubm51/Ha2loiIiKIiYkZ9POKFDJcx4390W3/lk8+PcfcuXP7lOXk
+      5HDhwgVsNhszZswgMjKSAwcOeJ/F1NXVRXt7OwCJiYmYzWaampoGbc9kMjF58mRKSkq89XR2
+      drJ9+3aWLl2KRqMZ9POKE3IktxkoGVvTDbrcajrou49y6tSpREZGUl1dTXR0NFu3bqWsrIyH
+      H36YxYsXM3XqVM6du7PYPmXKFObNm8fjjz9OXl4ey5Yt63c8qFKpKCoq4vPPP+dHP/oRBQUF
+      zJgxg7S0tF5PERkIxW0/a9qwUSghA7H9bCRkpBp568UFQzr31q1bdHd3YzQaUavVvcpsNhvt
+      7e33vBHP7XZz8+ZNuru70el06HS6IbWtqEmNjI4DU1Vnoeq6ZUh7KBMTEwcsG6pcKpVqRLcx
+      Kyplh9sC+HC517VuEVCMkJ77pSUDY2npwNLi2yw60ChGSLnMMzROCr7LXDFCOmo/D3YXQoJ7
+      7ZkMNooQ0m1rIDrqf4l/+EtGTWwiUvdtsLskLFV1FqHTtiJm2a76CwCooruJMd1ZuHV3RdFl
+      1eNs1+K0jQ5m94Sjqs7CAr2YT8RQhJCO6g/6HJNyDszV6xZhH9ES8inbbWvwRsiB8MgZ99B1
+      mdZB6NtnQz5C9tgah3V+f5HT3R1Ft1UfiO4Jy1AXye83IS+k29Zw75MG4G45YyY20fVfKW83
+      jPNL30TG0irmxCb0hWwbXoQciF5ymppw2rQ4bKMVK2eToDPtkBcyUETqOojUdRBjavKmdiXJ
+      KerST8gL2eNDyh4qnuipVDlFIuSFdA9zUuMrSpFTRsgAcT8i5ED0J2f3TT3uLv88sD+QyElN
+      gLjfEXIgBpJTVESNkCG/MK7STQh2F/rgkTP+4S95SGMOdnf6RdRHQ4e8kBG6icHuwqDkacXc
+      FmdMkEIGBBEj5N08pDGTFyumlCIS8kKGAnnacuFSt4iXDUEBQoqesj2sipOvRB4KIS+kKl7s
+      lO3BoG7jjYR9we6Gl3FyUhMYVCESIUGs8aSc1AQItemRYHdhWIgwnjTqxX01csgLCaCZtjjY
+      XRgWwR5PihodQSFCqpNDK0oGezwpanQEhQipmbYk2F0YNg9pzEFL3dNTpZABR/QF8v54I2Ef
+      Y9Wt97VNkcePoCAhI0MwSgK8FPeX+9qeqHcbelCMkKGyHvld7vdSkMjpGhQkpGbakpBbAvJw
+      v5aCRE/XoCAhATTpobX8czf3Yyno1WdmBbwNX1GWkCEcJQO9FBQK0REUJiRAdPbLwe7CiAnk
+      eDIUoiMoUEi16ZGQjZIQmPFkxndeMycyihMSQjtKgv/HkwU5GX6tL5AoUki16ZGQu759NwZ1
+      m9+kXDAzNWSiIyhUSICoEI+Sc0dd8Tl1G/XakIqOoGAhVbqJxP5kT7C74RO+XFo06rW8+sws
+      Ye8uHAjFCgl3UneoSznSS4uhlqo9KFpICP3x5EiWghbMTA25VO1B8UICjMp9K2yWgjJSjby6
+      LDTWHPsjLIQEiP3JnpCWciizbqNeO+T3GYpK2AgJMCr3zZDcNwn3vrRo1Gt564XQlhHCTEiV
+      biIxIRwpH9KYmTOq7wuijHotu9Y+HXIz6v5Q3OuJh0pX5U66z+4MdjdGxFuthXzheACA/JyM
+      kJ3A9EfYCgnguHaI28fWBbsbw8bqiqeo539CejY9EGEtJNx5C1hn2fPB7sawUOkmhPzKwUCE
+      vZBw59UijuoPQiKFa6YtJir75ZB6YsdwkELehdvWwO1j6+75ZrBgoDY9QnT2y4qMincjhewH
+      kcRUcnruDynkILjqL3D72BtBeY65SjeBqOyXQ/IhCL4ghRwCnjGm89qhgMqp0k0gctoSIpND
+      e9e7LyhWSLvdjsPhQKfT+bVej5yu+gs+p3SVbgIRuolo0hejNj2i2InKcBiWkG63m48//pii
+      oiJqamowGo38/Oc/Z+XKlURHRweyn8OmrKyM6upq1q9fH7A23LYGemyNuG0N3ncu9tgacNsa
+      vb890nkuWXoejKXSTQzbKDgYQ35Pjdvt5u2336asrIxdu3bxgx/8gG+++YZDhw7R1taG0Rh6
+      e+98RaWbCLqJqJFi+YshC3nu3DlOnDjBxx9/jMFgACA5OZk1a9YErHOS8GPImytKS0spLCz0
+      ytgfnZ2dbNiwgfHjxzN27Fhyc3Opqanxljc3N7N161b+8Ic/kJGRQXR0NLNnz+aLL75g06ZN
+      pKSkEBMTQ2FhIZ2dnd7P1dfXs3jxYiZMmIDJZGLjxo10dXX1avvy5cssXLiQ5ORkpkyZwjvv
+      vOMtO3XqFFu3bsXtdvf6zPHjx9m3T5znfkuGKGR7ezuNjY2kp6cPeI7b7ea1116jvb2d2tpa
+      LBaLd3x548YN4I6wu3btorGxkcrKSux2OwsWLODJJ58kJSWFmpoaWltbcTqdHD16FACbzcbz
+      zz9PXl4e9fX1mM1murq6+O1vf+tt+9NPP+WnP/0pb775JmazmWvXrvHUU095y1NTUzl48CC1
+      tbXeYw6Hg127djFmzJhh/cMkgWVIQvb09KDVaklOTh7wnKqqKq5fv87rr79ObGwsKpWKRYsW
+      MW/ePA4dOuQ9Lz09nVdeeYW4uDhUKhWZmZlkZ2dTUFBAVFQU0dHRTJ06FZfLBUBFRQVJSUkU
+      FhaiUqlQq9WsWrWK8vJympqacDgclJSUsGnTJmbNmoVKpSIqKgqTyeRtMzU1lezs7F79qKur
+      o6Ojg+zs7GH/0ySBY8gp2xMlB8Iz6/5uxJk3bx4XLox8eeTy5ctMmjSJxsZG6uvrqa+vp6Oj
+      A7fbjdlspqmpiba2NmbOnDloPfn5+Rw7dozm5mYAPvroIx599FEZIQVjSJOa0aNHEx8fz3/+
+      858Bz3G5XP2OL+Pj4xk1atSIO+hwODh58qQ37XuYPHmyV6bY2Fg0Gs2g9UyfPh29Xk9FRQVP
+      PPEE5eXlrFsXelvPlM6QhFSpVOTm5lJaWsqPf/zjftccTSYTZrMZu91OTEyM9/iXX37p0+L0
+      gw8+SFtbG1u2bOm3vKmpiZaWFlpbWwdtR6PR8Oyzz/Lee++RlJTE6NGjmT59+oj7JQkMQ07Z
+      S5Ys4dtvv2XLli3e8R3AV199hc1mIzMzk+7ubg4ePOgt++abb9i7dy/Lly8fcQezs7OprKzk
+      s88+8x5zu9189tln2Gw2DAYDkydPprS01DuLdrlc/Otf/+pT1/z58+ns7ORXv/oV8+fPv2dU
+      ldx/hiykXq/n/fff59y5cxgMBpKTkxk/fjyrVq3C6XSi1WrZsWMH27dvZ+HChSxfvpzHHnuM
+      lStXMmvWyG/LTE1NZcOGDTz77LPMnj2bxYsXM2nSJHbv3k1kZCQqlYp169Zx6tQpMjMzWb58
+      OdOmTaOqqqpPXTqdjmXLlvHvf/+b3NzcEfdJEjhGdC3bbrdz69YtdDpdnzTpcrmwWCy4XC4S
+      ExN7pW9fcLvd3Lx5E5fLhdFoRK1W91vucDgwGAxERUX1W88HH3zAX//6V3bu3IlKFVb3uIUE
+      it1c0R82m43nnnuOtWvXyuUeQQmbELF69WrS0tLIysryaQghCSxhFSEl4hM2EVISGkghJUIh
+      hZQIhRRSIhRSSIlQSCElQiGFlAiFFFIiFFJIiVBIISVCIYWUCIUUUiIUUkiJUEghJUIhhZQI
+      hRRSIhRSSIlQSCElQiGFlAiFFFIiFFJIiVBIISVCIYWUCMX/Aa8qWZl/nyaPAAAAAElFTkSu
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='Movie Ratings Histogram' width='192'>
+      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
+      2r8BgFtK/bVK9xwAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+  <referenced-extensions>
+    <referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.0.0' id='com.tableau.extension.radial'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>A radial chart displays data in a circular format in which the total of all segment values add up to 100%, representing the whole. This visualization type creates donut charts, sunbursts, and fan charts, which are powerful means to summarize simple part-to-whole insights at a high level.</description>
+          <author email='github@tableau.com' name='Tableau' organization='Tableau' website='https://www.tableau.com/support' />
+          <min-api-version>1.12</min-api-version>
+          <source-location>
+            <url>https://tableau-extensions.tableauusercontent.com/radial/radial.html</url>
+          </source-location>
+          <icon />
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+          <encoding id='level'>
+            <display-name resource-id='level-encoding'>Ring</display-name>
+            <role-spec>
+              <role-type>discrete-dimension</role-type>
+              <role-type>discrete-measure</role-type>
+            </role-spec>
+            <fields max-count='5' />
+            <encoding-icon token='level-radial' />
+            <tooltip resource-id='level-tooltip'>Radial Ring - Drag up to five dimensions here.</tooltip>
+          </encoding>
+          <encoding id='angle'>
+            <display-name resource-id='angle-encoding'>Angle</display-name>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='wedge' />
+            <tooltip resource-id='angle-tooltip'>Segment Angle - Drag a measure here.</tooltip>
+          </encoding>
+          <encoding id='center'>
+            <display-name resource-id='center-encoding'>Center</display-name>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+              <role-type>discrete-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='exclamation' />
+            <tooltip resource-id='center-tooltip'>Center Label - Drag a measure here</tooltip>
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='angle-encoding'>
+            <text locale='de_DE'>Winkel</text>
+            <text locale='en_GB'>Angle</text>
+            <text locale='en_US'>Angle</text>
+            <text locale='es_ES'>Ángulo</text>
+            <text locale='fr_CA'>Angle</text>
+            <text locale='fr_FR'>Angle</text>
+            <text locale='it_IT'>Angolo</text>
+            <text locale='ja_JP'>角度</text>
+            <text locale='ko_KR'>각도</text>
+            <text locale='nl_NL'>Hoek</text>
+            <text locale='pt_BR'>Ângulo</text>
+            <text locale='sv_SE'>Vinkel</text>
+            <text locale='th_TH'>มุม</text>
+            <text locale='zh_CN'>角度</text>
+            <text locale='zh_TW'>角度</text>
+          </resource>
+          <resource id='angle-tooltip'>
+            <text locale='de_DE'>Segmentwinkel - Kennzahl hierher ziehen.</text>
+            <text locale='en_GB'>Segment Angle - Drag a measure here.</text>
+            <text locale='en_US'>Segment Angle - Drag a measure here.</text>
+            <text locale='es_ES'>Ángulo del segmento - Arrastre la medida aquí.</text>
+            <text locale='fr_CA'>Angle du segment - Faites glisser la mesure ici.</text>
+            <text locale='fr_FR'>Angle du segment - Faites glisser la mesure ici.</text>
+            <text locale='it_IT'>Angolo del segmento - Trascina la misura qui.</text>
+            <text locale='ja_JP'>セグメントの角度 - メジャーを使用.</text>
+            <text locale='ko_KR'>세그먼트 각도 - 측정값 사용.</text>
+            <text locale='nl_NL'>Segmenthoek - Sleep meetwaarde hierheen.</text>
+            <text locale='pt_BR'>Ângulo do segmento - Arraste a medida aqui.</text>
+            <text locale='sv_SE'>Segmentvinkel - Dra mått hit.</text>
+            <text locale='th_TH'>มุมของส่วน - ใช้ค่าการวัด.</text>
+            <text locale='zh_CN'>分段角度 - 使用度量.</text>
+            <text locale='zh_TW'>分段角度 - 使用測量值.</text>
+          </resource>
+          <resource id='center-encoding'>
+            <text locale='de_DE'>Zentrum</text>
+            <text locale='en_GB'>Centre</text>
+            <text locale='en_US'>Center</text>
+            <text locale='es_ES'>Centro</text>
+            <text locale='fr_CA'>Centre</text>
+            <text locale='fr_FR'>Centre</text>
+            <text locale='it_IT'>Centro</text>
+            <text locale='ja_JP'>中心</text>
+            <text locale='ko_KR'>중심</text>
+            <text locale='nl_NL'>Centrum</text>
+            <text locale='pt_BR'>Centro</text>
+            <text locale='sv_SE'>Centrum</text>
+            <text locale='th_TH'>ศูนย์กลาง</text>
+            <text locale='zh_CN'>中心</text>
+            <text locale='zh_TW'>中心</text>
+          </resource>
+          <resource id='center-tooltip'>
+            <text locale='de_DE'>Text zentrieren - Kennzahl hierher ziehen.</text>
+            <text locale='en_GB'>Centre Label - Drag a measure here.</text>
+            <text locale='en_US'>Center Label - Drag a measure here.</text>
+            <text locale='es_ES'>Texto central - Arrastre la medida aquí.</text>
+            <text locale='fr_CA'>Texte central - Faites glisser la mesure ici.</text>
+            <text locale='fr_FR'>Texte central - Faites glisser la mesure ici.</text>
+            <text locale='it_IT'>Testo centrale - Trascina la misura qui.</text>
+            <text locale='ja_JP'>中央のテキスト - メジャーを使用.</text>
+            <text locale='ko_KR'>중앙 텍스트 - 측정값 사용.</text>
+            <text locale='nl_NL'>Tekst in het midden - Sleep meetwaarde hierheen.</text>
+            <text locale='pt_BR'>Texto central - Arraste a medida aqui</text>
+            <text locale='sv_SE'>Tekst in het midden - Sleep meetwaarde hierheen.</text>
+            <text locale='th_TH'>ข้อความตรงกลาง - ใช้ค่าการวัด.</text>
+            <text locale='zh_CN'>中心文字 - 使用度量.</text>
+            <text locale='zh_TW'>中心文字 - 使用測量值.</text>
+          </resource>
+          <resource id='level-encoding'>
+            <text locale='de_DE'>Hierarchieebene</text>
+            <text locale='en_GB'>Ring</text>
+            <text locale='en_US'>Ring</text>
+            <text locale='es_ES'>Anillo</text>
+            <text locale='fr_CA'>Anneau</text>
+            <text locale='fr_FR'>Anneau</text>
+            <text locale='it_IT'>Anello</text>
+            <text locale='ja_JP'>階層レベル</text>
+            <text locale='ko_KR'>원</text>
+            <text locale='nl_NL'>Ring</text>
+            <text locale='pt_BR'>Anel</text>
+            <text locale='sv_SE'>nivå</text>
+            <text locale='th_TH'>วงแหวน</text>
+            <text locale='zh_CN'>环</text>
+            <text locale='zh_TW'>環</text>
+          </resource>
+          <resource id='level-tooltip'>
+            <text locale='de_DE'>Hierarchieebene - Ziehen Sie hier bis zu fünf Dimensionen.</text>
+            <text locale='en_GB'>Radial Ring - Drag up to five dimensions here.</text>
+            <text locale='en_US'>Radial Ring - Drag up to five dimensions here.</text>
+            <text locale='es_ES'>Anillo - Arrastre aquí hasta cinco dimensiones.</text>
+            <text locale='fr_CA'>Anneau - Faites glisser jusqu&apos;à cinq dimensions ici.</text>
+            <text locale='fr_FR'>Anneau - Faites glisser jusqu&apos;à cinq dimensions ici.</text>
+            <text locale='it_IT'>Anello - Trascina qui fino a cinque dimensioni.</text>
+            <text locale='ja_JP'>階層レベル - 最大5つのディメンション.</text>
+            <text locale='ko_KR'>원 - 최대 5개의 디멘션.</text>
+            <text locale='nl_NL'>Ring - Sleep hier maximaal vijf dimensies naartoe.</text>
+            <text locale='pt_BR'>Anel - Arraste até cinco dimensões aqui.</text>
+            <text locale='sv_SE'>nivå - Dra upp till fem dimensioner här.</text>
+            <text locale='th_TH'>วงแหวน - &#9;มิติสูงสุดห้ามิติ.</text>
+            <text locale='zh_CN'>环 - 最多五个维度.</text>
+            <text locale='zh_TW'>環 - 最多五個維度.</text>
+          </resource>
+          <resource id='name'>
+            <text locale='en_US'>Radial</text>
+            <text locale='ja_JP'>サンバーストチャート</text>
+            <text locale='zh_CN'>旭日圖</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='fake sheet name' />
+      </referenced-views>
+    </referenced-extension>
+    <referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.5.0' id='com.tableau.extension.sankey'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>Sankeys show before-and-after states and relationships between two or more categories.</description>
+          <author email='github@tableau.com' name='Tableau' organization='Tableau' website='https://www.tableau.com/support' />
+          <min-api-version>1.12</min-api-version>
+          <source-location>
+            <url>https://extensions.tableauusercontent.com/sandbox/sankey/sankey.html</url>
+          </source-location>
+          <icon />
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+          <encoding id='level'>
+            <display-name resource-id='level-encoding'>Level</display-name>
+            <role-spec>
+              <role-type>discrete-dimension</role-type>
+              <role-type>discrete-measure</role-type>
+            </role-spec>
+            <fields max-count='5' />
+            <encoding-icon token='level' />
+            <tooltip resource-id='level-tooltip'>Sankey Level - Drag up to five dimensions here.</tooltip>
+          </encoding>
+          <encoding id='edge'>
+            <display-name resource-id='edge-encoding'>Link</display-name>
+            <role-spec>
+              <role-type>continuous-dimension</role-type>
+              <role-type>continuous-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='edge' />
+            <tooltip resource-id='edge-tooltip'>Link - Drag a measure here.</tooltip>
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='edge-encoding'>
+            <text locale='de_DE'>Verbindung</text>
+            <text locale='en_GB'>Link</text>
+            <text locale='en_US'>Link</text>
+            <text locale='es_ES'>Enlace</text>
+            <text locale='fr_CA'>Lien</text>
+            <text locale='fr_FR'>Lien</text>
+            <text locale='it_IT'>Flusso</text>
+            <text locale='ja_JP'>リンク</text>
+            <text locale='ko_KR'>링크</text>
+            <text locale='nl_NL'>Link</text>
+            <text locale='pt_BR'>Conexão</text>
+            <text locale='sv_SE'>länkar</text>
+            <text locale='th_TH'>ลิงก์</text>
+            <text locale='zh_CN'>链接</text>
+            <text locale='zh_TW'>鏈接</text>
+          </resource>
+          <resource id='edge-tooltip'>
+            <text locale='de_DE'>Verbindung - Kennzahl hierher ziehen.</text>
+            <text locale='en_GB'>Link - Drag a measure here.</text>
+            <text locale='en_US'>Link - Drag a measure here.</text>
+            <text locale='es_ES'>Enlace - Arrastre la medida aquí.</text>
+            <text locale='fr_CA'>Lien - Faites glisser la mesure ici.</text>
+            <text locale='fr_FR'>Lien - Faites glisser la mesure ici.</text>
+            <text locale='it_IT'>Flusso - Trascina la misura qui Link.</text>
+            <text locale='ja_JP'>リンク - メジャーを使用.</text>
+            <text locale='ko_KR'>링크 - 측정값 사용.</text>
+            <text locale='nl_NL'>Link - Sleep meetwaarde hierheen.</text>
+            <text locale='pt_BR'>Conexão - Arraste a medida aqui.</text>
+            <text locale='sv_SE'>Länk - Dra mått hit.</text>
+            <text locale='th_TH'>ลิงก์ - ใช้ค่าการวัด.</text>
+            <text locale='zh_CN'>链接 - 使用度量.</text>
+            <text locale='zh_TW'>鏈接 - 使用測量值.</text>
+          </resource>
+          <resource id='level-encoding'>
+            <text locale='de_DE'>Ebene</text>
+            <text locale='en_GB'>Level</text>
+            <text locale='en_US'>Level</text>
+            <text locale='es_ES'>Nivel</text>
+            <text locale='fr_CA'>Niveau</text>
+            <text locale='fr_FR'>Niveau</text>
+            <text locale='it_IT'>Livello</text>
+            <text locale='ja_JP'>レベル</text>
+            <text locale='ko_KR'>단계</text>
+            <text locale='nl_NL'>Niveau</text>
+            <text locale='pt_BR'>Nível</text>
+            <text locale='sv_SE'>Nivå</text>
+            <text locale='th_TH'>ระดับ</text>
+            <text locale='zh_CN'>级别</text>
+            <text locale='zh_TW'>級別</text>
+          </resource>
+          <resource id='level-tooltip'>
+            <text locale='de_DE'>Sankey-Ebene - Fügen Sie bis zu fünf Dimensionen hinzu.</text>
+            <text locale='en_GB'>Sankey Level - Drag up to five dimensions here.</text>
+            <text locale='en_US'>Sankey Level - Drag up to five dimensions here.</text>
+            <text locale='es_ES'>Nivel Sankey - Agregue hasta cinco dimensiones.</text>
+            <text locale='fr_CA'>Niveau Sankey - Ajoutez jusqu&apos;à cinq dimensions.</text>
+            <text locale='fr_FR'>Niveau Sankey - Ajoutez jusqu&apos;à cinq dimensions.</text>
+            <text locale='it_IT'>Livello Sankey - Aggiungi fino a cinque dimensioni.</text>
+            <text locale='ja_JP'>サンキーレベル - 最大5つのディメンションを追加.</text>
+            <text locale='ko_KR'>Sankey 레벨 - 최대 5개의 디멘션 추가.</text>
+            <text locale='nl_NL'>Sankey-niveau - Voeg maximaal vijf dimensies toe.</text>
+            <text locale='pt_BR'>Nível Sankey - Adicione até cinco dimensões.</text>
+            <text locale='sv_SE'>Sankey-nivå - Lägg till upp till fem dimensioner.</text>
+            <text locale='th_TH'>ระดับ Sankey - เพิ่มมิติสูงสุดห้ามิติ.</text>
+            <text locale='zh_CN'>桑基图級別 - 添加最多五个维度.</text>
+            <text locale='zh_TW'>桑基圖級別 - 新增最多五個維度.</text>
+          </resource>
+          <resource id='name'>
+            <text locale='en_US'>Sankey</text>
+            <text locale='ja_JP'>サンキー</text>
+            <text locale='zh_CN'>桑基图</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='fake sheet name' />
+      </referenced-views>
+    </referenced-extension>
+    <referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.0.0' id='com.tableau.extension.table'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>A rich table experience that allows you to build data tables directly in Tableau. Includes conditional formatting, search, and Viz in Cell functionality.</description>
+          <author email='github@tableau.com' name='Tableau' organization='Tableau' website='https://www.tableau.com/support' />
+          <min-api-version>1.12</min-api-version>
+          <source-location>
+            <url>https://tableau-extensions.tableauusercontent.com/table/table.html</url>
+          </source-location>
+          <icon />
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+        </worksheet-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>Tableau Table</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='fake sheet name' />
+      </referenced-views>
+    </referenced-extension>
+  </referenced-extensions>
+</workbook>
